@@ -90,6 +90,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
-  <script src="app.js"></script>
+  <script>
+alert("INLINE APP TEST");
+
+document.getElementById("pollForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("SUBMIT HANDLER WORKS");
+});
+</script>
 </body>
 </html>
