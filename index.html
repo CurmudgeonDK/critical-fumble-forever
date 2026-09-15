@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,214 +15,210 @@
 <body>
   <main class="page">
 
-```
-<header class="hero">
-  <div class="ornament">⚔</div>
-  <h1>Critical Fumble: Forever</h1>
-  <p>Choose your fate. The results update for everyone.</p>
-</header>
+    <header class="hero">
+      <div class="ornament">⚔</div>
+      <h1>Critical Fumble: Forever</h1>
+      <p>Choose your fate. The results update for everyone.</p>
+    </header>
 
-<form id="pollForm">
+    <form id="pollForm">
 
-  <!-- POLL 1 -->
-  <section class="poll-card">
-    <h2>Poll 1</h2>
-    <h3>What Faction?</h3>
+      <!-- POLL 1 -->
+      <section class="poll-card">
+        <h2>Poll 1</h2>
+        <h3>What Faction?</h3>
 
-    <div class="options">
-      <label>
-        <input type="radio" name="faction" value="Alliance" required>
-        <span>Alliance</span>
-      </label>
+        <div class="options">
+          <label>
+            <input type="radio" name="faction" value="Alliance" required>
+            <span>Alliance</span>
+          </label>
 
-      <label>
-        <input type="radio" name="faction" value="Horde">
-        <span>Horde</span>
-      </label>
+          <label>
+            <input type="radio" name="faction" value="Horde">
+            <span>Horde</span>
+          </label>
 
-      <label>
-        <input type="radio" name="faction" value="No Preference">
-        <span>No Preference</span>
-      </label>
-    </div>
+          <label>
+            <input type="radio" name="faction" value="No Preference">
+            <span>No Preference</span>
+          </label>
+        </div>
 
-    <div class="results" id="results-faction"></div>
-  </section>
-
-
-  <!-- POLL 2 -->
-  <section class="poll-card">
-    <h2>Poll 2</h2>
-    <h3>What role? <small>Primary role</small></h3>
-
-    <div class="options">
-      <label>
-        <input type="radio" name="role" value="Tank" required>
-        <span>Tank</span>
-      </label>
-
-      <label>
-        <input type="radio" name="role" value="DPS">
-        <span>DPS</span>
-      </label>
-
-      <label>
-        <input type="radio" name="role" value="Heal">
-        <span>Heal</span>
-      </label>
-    </div>
-
-    <div class="results" id="results-role"></div>
-  </section>
+        <div class="results" id="results-faction"></div>
+      </section>
 
 
-  <!-- POLL 3 -->
-  <section class="poll-card">
-    <h2>Poll 3</h2>
-    <h3>Raid Ready by December?</h3>
+      <!-- POLL 2 -->
+      <section class="poll-card">
+        <h2>Poll 2</h2>
+        <h3>What role? <small>Primary role</small></h3>
 
-    <div class="options">
-      <label>
-        <input type="radio" name="raid_ready" value="Yes" required>
-        <span>Yes</span>
-      </label>
+        <div class="options">
+          <label>
+            <input type="radio" name="role" value="Tank" required>
+            <span>Tank</span>
+          </label>
 
-      <label>
-        <input type="radio" name="raid_ready" value="No">
-        <span>No</span>
-      </label>
+          <label>
+            <input type="radio" name="role" value="DPS">
+            <span>DPS</span>
+          </label>
 
-      <label>
-        <input type="radio" name="raid_ready" value="Fuck no, enjoy the journey">
-        <span>Fuck no, enjoy the journey</span>
-      </label>
-    </div>
+          <label>
+            <input type="radio" name="role" value="Heal">
+            <span>Heal</span>
+          </label>
+        </div>
 
-    <div class="results" id="results-raid_ready"></div>
-  </section>
-
-
-  <!-- POLL 4 -->
-  <section class="poll-card">
-    <h2>Poll 4</h2>
-    <h3>What night for raids? <small>Select all that work.</small></h3>
-
-    <div class="options">
-      <label>
-        <input type="checkbox" name="raid_nights" value="Monday">
-        <span>Monday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Tuesday">
-        <span>Tuesday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Wednesday">
-        <span>Wednesday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Thursday">
-        <span>Thursday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Friday">
-        <span>Friday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Saturday">
-        <span>Saturday</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="raid_nights" value="Sunday">
-        <span>Sunday</span>
-      </label>
-    </div>
-
-    <div class="results" id="results-raid_nights"></div>
-  </section>
+        <div class="results" id="results-role"></div>
+      </section>
 
 
-  <!-- POLL 5 -->
-  <section class="poll-card">
-    <h2>Poll 5</h2>
-    <h3>What Tradeskill calls to you? <small>Select up to two.</small></h3>
+      <!-- POLL 3 -->
+      <section class="poll-card">
+        <h2>Poll 3</h2>
+        <h3>Raid Ready by December?</h3>
 
-    <div class="options">
-      <label>
-        <input type="checkbox" name="tradeskill" value="Blacksmithing">
-        <span>Blacksmithing</span>
-      </label>
+        <div class="options">
+          <label>
+            <input type="radio" name="raid_ready" value="Yes" required>
+            <span>Yes</span>
+          </label>
 
-      <label>
-        <input type="checkbox" name="tradeskill" value="Leatherworking">
-        <span>Leatherworking</span>
-      </label>
+          <label>
+            <input type="radio" name="raid_ready" value="No">
+            <span>No</span>
+          </label>
 
-      <label>
-        <input type="checkbox" name="tradeskill" value="Alchemy">
-        <span>Alchemy</span>
-      </label>
+          <label>
+            <input type="radio" name="raid_ready" value="Fuck no, enjoy the journey">
+            <span>Fuck no, enjoy the journey</span>
+          </label>
+        </div>
 
-      <label>
-        <input type="checkbox" name="tradeskill" value="Enchanting">
-        <span>Enchanting</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="tradeskill" value="Tailoring">
-        <span>Tailoring</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="tradeskill" value="Engineering">
-        <span>Engineering</span>
-      </label>
-
-      <label>
-        <input type="checkbox" name="tradeskill" value="Gathering">
-        <span>Gathering</span>
-      </label>
-    </div>
-
-    <div class="results" id="results-tradeskill"></div>
-  </section>
+        <div class="results" id="results-raid_ready"></div>
+      </section>
 
 
-  <button type="submit" id="submitBtn">Submit My Choices</button>
+      <!-- POLL 4 -->
+      <section class="poll-card">
+        <h2>Poll 4</h2>
+        <h3>What night for raids? <small>Select all that work.</small></h3>
 
-  <p id="status" class="status"></p>
+        <div class="options">
+          <label>
+            <input type="checkbox" name="raid_nights" value="Monday">
+            <span>Monday</span>
+          </label>
 
-</form>
+          <label>
+            <input type="checkbox" name="raid_nights" value="Tuesday">
+            <span>Tuesday</span>
+          </label>
 
-<footer>
-  Critical Fumble: Forever • Poll results are shared with everyone.
-</footer>
-```
+          <label>
+            <input type="checkbox" name="raid_nights" value="Wednesday">
+            <span>Wednesday</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="raid_nights" value="Thursday">
+            <span>Thursday</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="raid_nights" value="Friday">
+            <span>Friday</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="raid_nights" value="Saturday">
+            <span>Saturday</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="raid_nights" value="Sunday">
+            <span>Sunday</span>
+          </label>
+        </div>
+
+        <div class="results" id="results-raid_nights"></div>
+      </section>
+
+
+      <!-- POLL 5 -->
+      <section class="poll-card">
+        <h2>Poll 5</h2>
+        <h3>What Tradeskill calls to you? <small>Select up to two.</small></h3>
+
+        <div class="options">
+          <label>
+            <input type="checkbox" name="tradeskill" value="Blacksmithing">
+            <span>Blacksmithing</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Leatherworking">
+            <span>Leatherworking</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Alchemy">
+            <span>Alchemy</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Enchanting">
+            <span>Enchanting</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Tailoring">
+            <span>Tailoring</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Engineering">
+            <span>Engineering</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="tradeskill" value="Gathering">
+            <span>Gathering</span>
+          </label>
+        </div>
+
+        <div class="results" id="results-tradeskill"></div>
+      </section>
+
+
+      <button type="submit" id="submitBtn">Submit My Choices</button>
+
+      <p id="status" class="status"></p>
+
+    </form>
+
+    <footer>
+      Critical Fumble: Forever • Poll results are shared with everyone.
+    </footer>
 
   </main>
 
-  <!-- Supabase library -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-  <!-- Application code -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  
   <script>
-    const SUPABASE_URL = "https://chmkldfibhofihfxraem.supabase.co";
+    /*
+     * CRITICAL FUMBLE: FOREVER
+     * Supabase REST API version
+     *
+     * No Supabase JavaScript library is required.
+     */
 
-    const SUPABASE_ANON_KEY = "sb_publishable_MuLZ2HiK1JerUCsuh_kt9g_EhHtzleT";
+    const SUPABASE_URL =
+      "https://chmkldfibhofihfxraem.supabase.co";
 
-    const client = supabase.createClient(
-      SUPABASE_URL,
-      SUPABASE_ANON_KEY
-    );
+    const SUPABASE_ANON_KEY =
+      "sb_publishable_MuLZ2HiK1JerUCsuh_kt9g_EhHtzleT";
 
 
     const pollDefinitions = {
@@ -270,8 +265,11 @@
     function setStatus(message, isError = false) {
       const status = document.getElementById("status");
 
-      status.textContent = message;
+      if (!status) {
+        return;
+      }
 
+      status.textContent = message;
       status.style.color = isError ? "#b91c1c" : "";
     }
 
@@ -311,7 +309,6 @@
       );
 
       container.innerHTML = choices.map(choice => {
-
         const count = counts[choice] || 0;
 
         const percentage = total
@@ -325,4 +322,272 @@
               <span>${count} (${percentage}%)</span>
             </div>
 
-            <di
+            <div class="result-bar">
+              <div
+                class="result-fill"
+                style="width: ${percentage}%"
+              ></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+
+    async function loadResults() {
+      try {
+        const response = await fetch(
+          `${SUPABASE_URL}/rest/v1/poll_votes?select=poll,choice`,
+          {
+            method: "GET",
+
+            headers: {
+              "apikey": SUPABASE_ANON_KEY,
+              "Authorization": `Bearer ${SUPABASE_ANON_KEY}`
+            }
+          }
+        );
+
+        if (!response.ok) {
+          const errorText = await response.text();
+
+          throw new Error(
+            `${response.status}: ${errorText}`
+          );
+        }
+
+        const data = await response.json();
+
+        const results = {};
+
+        Object.keys(pollDefinitions).forEach(poll => {
+          results[poll] = {};
+
+          pollDefinitions[poll].forEach(choice => {
+            results[poll][choice] = 0;
+          });
+        });
+
+
+        data.forEach(row => {
+          if (
+            results[row.poll] &&
+            Object.prototype.hasOwnProperty.call(
+              results[row.poll],
+              row.choice
+            )
+          ) {
+            results[row.poll][row.choice]++;
+          }
+        });
+
+
+        Object.keys(results).forEach(poll => {
+          renderResults(
+            poll,
+            results[poll]
+          );
+        });
+
+      } catch (error) {
+        console.error(
+          "Error loading results:",
+          error
+        );
+
+        setStatus(
+          "Unable to load poll results.",
+          true
+        );
+      }
+    }
+
+
+    document
+      .getElementById("pollForm")
+      .addEventListener(
+        "submit",
+        async function(event) {
+
+          /*
+           * THIS IS THE IMPORTANT PART:
+           * Stop the browser from doing a normal
+           * HTML form submission.
+           */
+
+          event.preventDefault();
+
+
+          const nights =
+            getChecked("raid_nights");
+
+
+          if (nights.length === 0) {
+            setStatus(
+              "Please select at least one raid night.",
+              true
+            );
+
+            return;
+          }
+
+
+          const tradeskills =
+            getChecked("tradeskill");
+
+
+          if (tradeskills.length > 2) {
+            setStatus(
+              "Please select no more than two tradeskills.",
+              true
+            );
+
+            return;
+          }
+
+
+          const faction =
+            getRadio("faction");
+
+          const role =
+            getRadio("role");
+
+          const raidReady =
+            getRadio("raid_ready");
+
+
+          if (
+            !faction ||
+            !role ||
+            !raidReady
+          ) {
+            setStatus(
+              "Please complete Polls 1, 2, and 3.",
+              true
+            );
+
+            return;
+          }
+
+
+          const rows = [
+            {
+              poll: "faction",
+              choice: faction
+            },
+
+            {
+              poll: "role",
+              choice: role
+            },
+
+            {
+              poll: "raid_ready",
+              choice: raidReady
+            },
+
+            ...nights.map(night => ({
+              poll: "raid_nights",
+              choice: night
+            })),
+
+            ...tradeskills.map(skill => ({
+              poll: "tradeskill",
+              choice: skill
+            }))
+          ];
+
+
+          const button =
+            document.getElementById(
+              "submitBtn"
+            );
+
+
+          button.disabled = true;
+
+          setStatus("Submitting...");
+
+
+          try {
+
+            const response =
+              await fetch(
+                `${SUPABASE_URL}/rest/v1/poll_votes`,
+                {
+                  method: "POST",
+
+                  headers: {
+                    "apikey":
+                      SUPABASE_ANON_KEY,
+
+                    "Authorization":
+                      `Bearer ${SUPABASE_ANON_KEY}`,
+
+                    "Content-Type":
+                      "application/json",
+
+                    "Prefer":
+                      "return=minimal"
+                  },
+
+                  body:
+                    JSON.stringify(rows)
+                }
+              );
+
+
+            if (!response.ok) {
+
+              const errorText =
+                await response.text();
+
+              throw new Error(
+                `${response.status}: ${errorText}`
+              );
+            }
+
+
+            setStatus(
+              "Your choices have been recorded. Thank you!"
+            );
+
+
+            event.target.reset();
+
+
+            await loadResults();
+
+          } catch (error) {
+
+            console.error(
+              "Error submitting votes:",
+              error
+            );
+
+            setStatus(
+              "Something went wrong submitting your choices: " +
+              error.message,
+              true
+            );
+
+          } finally {
+
+            button.disabled = false;
+
+          }
+
+        }
+      );
+
+
+    /*
+     * Load existing results when the page opens.
+     */
+
+    loadResults();
+
+  </script>
+
+</body>
+</html>
